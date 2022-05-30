@@ -10,10 +10,19 @@
 </head>
 <body>
 
-<div class="container">
-    <button id="startGame">Start Extract ball</button>
-    <div class="balls-holder"></div>
+<div id="app" class="container">
+    <div class="main-bets">
+        <div class="balls-holder"></div>
+        <div class="bets-holder">
+            <div class="selected-ball">
 
+            </div>
+            <div class="bets-value">
+                <input type="text" placeholder="Bet">
+                <button id="startGame">BET</button>
+            </div>
+        </div>
+    </div>
     <div class="extract-ball-holder">
         <div class="col-9">
             <div class="ball-holder" data-ball="6">
@@ -174,20 +183,13 @@
     </div>
 
 
-    <div class="draw-table">
-
-        <div class="drum-holder">
-
-        </div>
-    </div>
 </div>
-<div id="app">
 
-</div>
 
 <script src="classes/Utils.js"></script>
 <script src="classes/Ball.js"></script>
 <script src="classes/Holder.js"></script>
+<script src="classes/Game.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

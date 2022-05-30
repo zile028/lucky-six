@@ -7,8 +7,9 @@
 
 .container {
     width: 900px;
-    height: 900px;
+
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .ball {
@@ -19,6 +20,62 @@
     animation-duration: .3s;
     animation-fill-mode: forwards;
     cursor: pointer;
+}
+
+.main-bets {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main-bets .bets-holder {
+    flex: 1;
+    padding: 10px;
+}
+
+.main-bets .selected-ball {
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px #888888 inset;
+    display: flex;
+}
+
+
+.bets-value {
+    display: flex;
+    box-shadow: 0 0 8px #000;
+    border-radius: 5px;
+}
+
+.bets-value input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    flex: 1;
+}
+
+.bets-value button {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*BALLS HOLDER*/
+.balls-holder {
+    display: grid;
+    /*gap: 20px;*/
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    place-items: center;
+    width: 600px;
+    height: 450px;
+    border: 1px solid blue;
 }
 
 .ball.chosen {
@@ -36,17 +93,11 @@
 }
 
 
-.balls-holder {
-
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .extract-ball-holder {
     display: flex;
     border: 1px solid red;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .col-middle {
@@ -184,13 +235,13 @@
 
 
 .ball-hole {
-    border: 1px solid black;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background: url(https://images.assetsdelivery.com/compings_v2/yaroslavka/yaroslavka1810/yaroslavka181000012.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(/img/empty-hole.png);
     background-position: center;
     background-size: cover;
+
 }
 
 .ball-holder {
