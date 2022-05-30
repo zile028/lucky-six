@@ -40,6 +40,24 @@
     margin-bottom: 10px;
     box-shadow: 0 0 8px #888888 inset;
     display: flex;
+    overflow: hidden;
+}
+
+.main-bets .selected-ball .ball {
+    position: relative;
+    left: 300px;
+    animation-name: selectBall;
+    animation-duration: 1s;
+}
+
+@keyframes selectBall {
+    from {
+        left: 300px;
+    }
+    to {
+        left: 0;
+        transform: rotate(-360deg);
+    }
 }
 
 

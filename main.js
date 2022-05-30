@@ -75,7 +75,7 @@ function setChosen(ball) {
 function extractBall() {
     shuffleBall = Utils.randomize(allBalls)
     document.querySelectorAll(".ball-holder .ball-hole").forEach(el => el.innerHTML = "")
-    game.selectedBall = []
+    
     let i = 0
     let loop = setInterval(() => {
         let ball = shuffleBall.shift()
